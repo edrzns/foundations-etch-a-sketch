@@ -28,7 +28,7 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.grid-square:hover {
+.grid-square.hovered {
   background-color: #4caf50;
 }
 
