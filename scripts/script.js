@@ -22,6 +22,14 @@ function createGrid(gridSize) {
     }
 }
 
+function resetGrid() {
+    const hoveredSquares = document.querySelectorAll('.grid-square.hovered');
+
+    hoveredSquares.forEach(square => {
+        square.classList.remove('hovered');
+    });
+}
+
 function createNewGrid() {
     const userInput = prompt('Enter nuber of squares per side (maximum 100):');
 
