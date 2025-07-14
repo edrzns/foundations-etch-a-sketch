@@ -1,6 +1,7 @@
-* {
+/** For debug only, don't use in production **/
+/* * {
   outline: 1px solid white;
-}
+} */
 
 body {
   margin: 0;
