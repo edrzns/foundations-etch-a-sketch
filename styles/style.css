@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid white;
+}
+
 body {
   margin: 0;
   padding: 20px;
@@ -6,8 +10,30 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-color: #f0f0f0; */
   background-color: #ef2026;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .container {
@@ -33,22 +59,12 @@ body {
 }
 
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   color: #333;
   margin: 0;
-  height: 150px;
+  height: auto;
+  margin: 20px 0;
+  align-self: center;
 }
-
-.controls {
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 button {
     background-color: #4caf50;
     color: white;
@@ -59,6 +75,8 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 0 5px;
+    width: 120px;
+    text-align: center;
 }
 
 button:hover {
